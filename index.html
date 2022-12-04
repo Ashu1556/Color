@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-    <h2>Color schemes</h2>
+    <div class="container">
+        <h2 style="text-align:center">Color schemes Switcher</h2>
+        <div class="container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+
+        </div>
+        
+        <p class="text">Try clicking on One of the Colors above to
+            Change the background color of this page.! 
+        </p>
+
+
+    </div>
+
+    
+    
 </body>
+<script>
+    document.getElementsByClassName("circle1")[0].addEventListener("click", function myfunction(){
+
+        document.getElementsByClassName("container")[0].style.backgroundColor = "darkgray";
+    })
+
+    document.getElementsByClassName("circle2")[0].addEventListener("click", function myfunction(){
+
+        document.getElementsByClassName("container")[0].style.backgroundColor = "white";
+    })
+    document.getElementsByClassName("circle3")[0].addEventListener("click", function myfunction(){
+
+       document.getElementsByClassName("container")[0].style.backgroundColor = "blue";
+    })
+    document.getElementsByClassName("circle4")[0].addEventListener("click", function myfunction(){
+
+      document.getElementsByClassName("container")[0].style.backgroundColor = "yellow";
+    })
+
+
+
+</script>
+
 </html>
